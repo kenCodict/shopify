@@ -2,7 +2,6 @@ import { Rating } from './Rating';
 import Image from 'next/image'
 import React,{useState} from 'react'
 import { FaStar, FaStarHalf,FaProjectDiagram } from 'react-icons/fa'
-import { HiOutlineStar,HiStar,  } from 'react-icons/Hi'
 import currency from './currency';
 // import {Currency} from 'react-currency-format'
 

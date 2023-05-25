@@ -1,6 +1,6 @@
 import React from "react";
 import { FaStar, FaStarHalfAlt } from 'react-icons/fa'
-import { HiOutlineStar,HiStar,  } from 'react-icons/Hi'
+import { HiOutlineStar,HiStar,  } from 'react-icons/hi'
 export function Rating({
   rate
 }) {
