@@ -1,4 +1,22 @@
-:root {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .link {
+    @apply cursor-pointer hover:underline;
+  }
+  .link-p2 {
+    @apply font-extrabold md:text-sm
+  }
+  .rateCont {
+    @apply flex items-center
+  }
+  .button {
+    @apply p-2 text-xs md:text-sm bg-gradient-to-b from-orange-200 to-orange-400 border border-orange-300 rounded-sm focus:outline-none focus:ring-2 focus:ring-orange-500 active:from-orange-500 active:to-orange-400;
+  }
+}
+/* :root {
   --max-width: 1100px;
   --border-radius: 12px;
   --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
@@ -98,10 +116,10 @@ body {
 a {
   color: inherit;
   text-decoration: none;
-}
+} */
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
-}
+} */
