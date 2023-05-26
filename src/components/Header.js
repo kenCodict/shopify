@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import {FaSearch, FaBars, FaShoppingCart} from 'react-icons/fa'
+import { useSession, signIn, signOut } from "next-auth/react"
 const Header = () => {
   return (
     <header className=''>
@@ -22,7 +23,7 @@ const Header = () => {
                                     <FaSearch className='text-4xl p-1'/>
                         </div>
                         {/* Right */}
-                        <div className="text-white flex items-center text-xs space-x-6 mr-6">
+                        <div className="text-white flex items-center text-xs space-x-6 mr-6" onClick={() => signIn()}>
                                     <div className="link">
                                                 <p className="">Hello KenCodict</p>
                                                 <p className="link-p2">Account & List</p>
